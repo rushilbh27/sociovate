@@ -1,0 +1,14 @@
+.f-modal-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);backdrop-filter:blur(4px);z-index:9999}
+
+.f-modal{width:min(920px,94%);max-height:86vh;overflow:auto;background:linear-gradient(180deg, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:22px;border-radius:12px;box-shadow:0 10px 40px rgba(2,6,23,0.6);position:relative;border:1px solid rgba(255,255,255,0.03);color:#ffffff}
+/* Neon blue border only (use mask so the gradient shows as a border/glow, not a fill) */
+.f-modal:before{content:"";position:absolute;inset:-2px;border-radius:14px;padding:2px;background:linear-gradient(90deg, rgba(1, 13, 36, 0.95)5)5)5), rgba(0, 0, 0, 0.95));-webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);pointer-events:none;opacity:0.85;filter:blur(8px);z-index:-1}
+.f-modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.f-modal-header h2{margin:0;color:#00bfff;font-size:20px;font-weight:700;text-shadow:0 2px 16px rgba(14,165,233,0.12)}
+.f-modal-close{background:transparent;border:0;color:#ffffff;font-size:26px;line-height:1;cursor:pointer;padding:6px;border-radius:6px}
+.f-modal-body{color:#ffffff;font-size:15px;line-height:1.6}
+.f-modal a{color:#06b6d4;text-decoration:underline}
+.f-modal a:hover{color:#67e8f9}
+
+/* responsive */
+@media (max-width:420px){.f-modal{width:94%;padding:14px;border-radius:10px}.f-modal-header h2{font-size:16px}.f-modal-body{font-size:14px}}

@@ -1,0 +1,293 @@
+@media (max-width: 767px) {
+  .case-grid .magic-bento-card__content {
+    margin-bottom: 1.25rem;
+  }
+}
+/* Pin the expandable card button to the bottom for case studies grid */
+.case-grid .magic-bento-card {
+  display: flex;
+  flex-direction: column;
+}
+.case-grid .magic-bento-card > .block {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.case-grid .magic-bento-card__content {
+  flex: 1 1 auto;
+}
+.case-grid .magic-bento-card button {
+  margin-top: auto;
+}
+:root {
+  --hue: 27;
+  --sat: 69%;
+  --white: hsl(0, 0%, 100%);
+  --blue-primary: rgba(56, 189, 248, 1);
+  --blue-glow: rgba(56, 189, 248, 0.2);
+  --blue-border: rgba(56, 189, 248, 0.8);
+  --border-color: rgba(255, 255, 255, 0.05);
+  --background-dark: #0b0f19;
+  color-scheme: light dark;
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 0;
+  max-width: 100%;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  grid-auto-rows: auto;
+  align-items: start;
+}
+
+.magic-bento-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  aspect-ratio: auto;
+  width: 100%;
+  max-width: 100%;
+  min-height: 260px;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-color);
+  background: var(--background-dark);
+  font-weight: 300;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-intensity: 0;
+  --glow-radius: 200px;
+}
+
+.magic-bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.magic-bento-card__header,
+.magic-bento-card__content {
+  display: flex;
+  position: relative;
+  color: var(--white);
+}
+
+.magic-bento-card__header {
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.75rem; /* Reduced from 3rem */
+}
+
+.magic-bento-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.magic-bento-card__content {
+  flex-direction: column;
+  gap: 0.5rem; /* Reduced from 1rem */
+}
+
+.magic-bento-card__title,
+.magic-bento-card__description {
+  --clamp-title: 1;
+  --clamp-desc: 2;
+}
+
+.magic-bento-card__title {
+  font-weight: 600;
+  font-size: 1.5rem; /* text-2xl equivalent */
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .magic-bento-card__title {
+    font-size: 1.875rem; /* md:text-3xl equivalent */
+  }
+}
+
+.magic-bento-card__description {
+  font-size: 1rem; /* text-base equivalent */
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #93c5fd; /* text-blue-300 */
+}
+
+@media (min-width: 768px) {
+  .magic-bento-card__description {
+    font-size: 1.125rem; /* md:text-lg equivalent */
+  }
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title,
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__title {
+  -webkit-line-clamp: var(--clamp-title);
+  line-clamp: var(--clamp-title);
+}
+
+.magic-bento-card--text-autohide .magic-bento-card__description {
+  -webkit-line-clamp: var(--clamp-desc);
+  line-clamp: var(--clamp-desc);
+}
+
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .magic-bento-card {
+    width: 100%;
+    min-height: 220px;
+    padding: 1.5rem;
+  }
+
+  .magic-bento-card__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .magic-bento-card__title {
+    font-size: 1.5rem;
+  }
+
+  .magic-bento-card__description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .magic-bento-card__content {
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    align-items: start;
+  }
+  
+  /* 3-card equal grid (for Why Choose section) */
+  .card-grid:has(.magic-bento-card:nth-child(3):last-child):not(.asymmetric-layout) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Asymmetric layout for services - 2 cards on top, 1 full-width below */
+  .card-grid.asymmetric-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card-grid.asymmetric-layout .magic-bento-card:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Border glow effect */
+.magic-bento-card--border-glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 6px;
+  background: radial-gradient(
+    var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+    rgba(56, 189, 248, calc(var(--glow-intensity) * 0.8)) 0%,
+    rgba(56, 189, 248, calc(var(--glow-intensity) * 0.4)) 30%,
+    transparent 60%
+  );
+  border-radius: inherit;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .magic-bento-card--border-glow::after {
+    padding: 2px;
+    background: rgba(56, 189, 248, calc(var(--glow-intensity) * 0.6));
+  }
+}
+
+.magic-bento-card--border-glow:hover::after {
+  opacity: 1;
+}
+
+.magic-bento-card--border-glow:hover {
+  box-shadow:
+    0 4px 20px rgba(14, 165, 233, 0.2),
+    0 0 30px var(--blue-glow);
+}
+
+.particle-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgba(56, 189, 248, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.particle-container:hover {
+  box-shadow:
+    0 4px 20px rgba(14, 165, 233, 0.2),
+    0 0 30px var(--blue-glow);
+}
+
+/* Global spotlight styles */
+.global-spotlight {
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+  z-index: 200 !important;
+  pointer-events: none;
+}
+
+.bento-section {
+  position: relative;
+  user-select: none;
+}
+
+/* Add spacing between tech stack and button in expandable cards */
+.case-grid .magic-bento-card .flex.flex-wrap.gap-2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Case studies grid: use taller uniform height to match the tallest card */
+.case-grid .magic-bento-card {
+  min-height: 350px;
+}
+
+@media (max-width: 767px) {
+  .case-grid .magic-bento-card {
+    min-height: 280px;
+  }
+}
