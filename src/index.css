@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+/* Playfair Display removed — no longer used */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +22,12 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.brand-cursive {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 /* Dropdown slide-down animation with fade */

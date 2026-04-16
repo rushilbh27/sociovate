@@ -1,21 +1,21 @@
-.whatsapp-widget__wrap {
+.email-widget__wrap {
   position: fixed;
-  bottom: 28px;
+  bottom: 110px; /* Decreased gap - closer to WhatsApp widget */
   right: 28px;
   z-index: 9999;
   pointer-events: auto;
 }
 
-.whatsapp-widget {
+.email-widget {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
-  /* circular icon button — larger to match chatbase */
+  gap: ;
+  /* Same size as WhatsApp widget */
   width: 64px;
   height: 64px;
   padding: 6px;
-  /* Match site CTA gradient: Plasma Orange */
+  /* Same gradient as WhatsApp widget — Plasma Orange */
   background: linear-gradient(90deg, #FF6B2B 0%, #FF8C42 100%);
   color: #fff;
   border-radius: 9999px;
@@ -26,35 +26,35 @@
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-.whatsapp-widget:hover {
+.email-widget:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(255, 107, 43, 0.22), 0 0 48px rgba(255, 140, 66, 0.12) inset;
 }
 
-.whatsapp-icon {
-  width: 44px;
-  height: 44px;
+.email-icon {
+  width: 46px;
+  height: 46px;
   flex-shrink: 0;
   object-fit: contain;
   display: block;
 }
 
-.whatsapp-label {
-  font-size: 14px;
-  line-height: 1;
-  padding-right: 4px;
-}
-
 @media (max-width: 520px) {
-  .whatsapp-widget__wrap { bottom: 18px; right: 14px; }
-  .whatsapp-widget { width: 56px; height: 56px; padding: 4px; }
-  .whatsapp-icon { width: 36px; height: 36px; }
-  .whatsapp-label { display: none; }
+  .email-widget__wrap { 
+    bottom: 80px; /* Decreased gap for mobile */
+    right: 14px; 
+  }
+  .email-widget { 
+    width: 56px; 
+    height: 56px; 
+    padding: 4px; 
+  }
+  .email-icon { 
+    width: 36px; 
+    height: 36px; 
+  }
 }
-
-/* Hide label by default to make widget icon-only and maximize logo area */
-.whatsapp-label { display: none; }
 
 @media print {
-  .whatsapp-widget__wrap { display: none !important; }
+  .email-widget__wrap { display: none !important; }
 }

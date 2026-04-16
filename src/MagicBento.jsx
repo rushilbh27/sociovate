@@ -4,7 +4,7 @@ import './MagicBento.css';
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = '56, 189, 248'; // Electric blue to match your theme
+const DEFAULT_GLOW_COLOR = '255, 107, 43'; // Plasma Orange to match your theme
 const MOBILE_BREAKPOINT = 768;
 
 const createParticleElement = (x, y, color = DEFAULT_GLOW_COLOR) => {
@@ -481,7 +481,7 @@ const MagicBento = ({
           const cardProps = {
             className: baseClassName,
             style: {
-              backgroundColor: card.color || '#0b0f19',
+              backgroundColor: card.color || '#0a1218',
               '--glow-color': glowColor
             }
           };
@@ -501,12 +501,12 @@ const MagicBento = ({
                     <h3 className="magic-bento-card__title">{card.title}</h3>
                     <p className="magic-bento-card__description">{card.desc}</p>
                     {card.quote && (
-                      <p className="text-blue-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
+                      <p className="text-orange-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
                     )}
                   </div>
                   <button
                     onClick={() => onToggleExpand(card.id)}
-                    className="mt-4 w-full py-2.5 px-4 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 font-medium text-sm hover:bg-blue-500/20 hover:border-blue-500/50 transition-all shadow-lg shadow-blue-500/10 cursor-target"
+                    className="mt-4 w-full py-2.5 px-4 rounded-lg bg-[#FF6B2B]/10 border border-[#FF6B2B]/30 text-[#FF6B2B] font-medium text-sm hover:bg-[#FF6B2B]/20 hover:border-[#FF6B2B]/50 transition-all shadow-lg shadow-[#FF6B2B]/10 cursor-target"
                   >
                     View More
                   </button>
@@ -521,7 +521,7 @@ const MagicBento = ({
                     <h3 className="magic-bento-card__title">{card.title}</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">{card.fullDesc || card.desc}</p>
                     {card.quote && (
-                      <p className="text-blue-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
+                      <p className="text-orange-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
                     )}
                     
                     {/* Metrics */}
@@ -529,7 +529,7 @@ const MagicBento = ({
                       <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10">
                         {card.metrics.map((metric, i) => (
                           <div key={i}>
-                            <div className="text-xl font-bold text-blue-400 mb-1">{metric.value}</div>
+                            <div className="text-xl font-bold text-[#FF6B2B] mb-1">{metric.value}</div>
                             <div className="text-xs text-slate-400">{metric.label}</div>
                           </div>
                         ))}
@@ -549,7 +549,7 @@ const MagicBento = ({
                   </div>
                   <button
                     onClick={() => onToggleExpand(card.id)}
-                    className="mt-4 w-full py-2.5 px-4 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 font-medium text-sm hover:bg-blue-500/20 hover:border-blue-500/50 transition-all shadow-lg shadow-blue-500/10 cursor-target"
+                    className="mt-4 w-full py-2.5 px-4 rounded-lg bg-[#FF6B2B]/10 border border-[#FF6B2B]/30 text-[#FF6B2B] font-medium text-sm hover:bg-[#FF6B2B]/20 hover:border-[#FF6B2B]/50 transition-all shadow-lg shadow-[#FF6B2B]/10 cursor-target"
                   >
                     Show Less
                   </button>
@@ -577,7 +577,7 @@ const MagicBento = ({
                   <h3 className="magic-bento-card__title">{card.title}</h3>
                   <p className="magic-bento-card__description">{card.desc}</p>
                   {card.quote && (
-                    <p className="text-blue-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
+                    <p className="text-orange-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
                   )}
                 </div>
               </ParticleCard>
@@ -593,7 +593,7 @@ const MagicBento = ({
                 <h3 className="magic-bento-card__title">{card.title}</h3>
                 <p className="magic-bento-card__description">{card.desc}</p>
                 {card.quote && (
-                  <p className="text-blue-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
+                  <p className="text-orange-200 text-sm md:text-base font-medium italic text-center mt-3">"{card.quote}"</p>
                 )}
               </div>
             </div>

@@ -31,7 +31,7 @@ export default function PublicFooter() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <footer id="socials" className="relative w-full border-t border-white/10 backdrop-blur-2xl bg-[#070b14]/90 overflow-hidden">
+    <footer id="socials" className="relative w-full border-t border-white/10 backdrop-blur-2xl bg-[#050E12]/90 overflow-hidden">
       {!shouldReduceMotion && (
         <motion.div
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
@@ -50,7 +50,7 @@ export default function PublicFooter() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            'linear-gradient(90deg, transparent, rgba(56,189,248,0.35) 50%, transparent)',
+            'linear-gradient(90deg, transparent, rgba(255,107,43,0.35) 50%, transparent)',
         }}
         aria-hidden="true"
       />
@@ -66,7 +66,7 @@ export default function PublicFooter() {
           <motion.div className="space-y-4" custom={0} variants={columnVariants}>
             <a href="#" className="flex items-center gap-2">
               <img src="/logu.svg" alt="Sociovate" className="w-7 h-7 rounded-md" />
-              <span className="text-lg font-bold tracking-[0.015em]">Sociovate</span>
+              <span className="brand-cursive text-xl text-white">Sociovate</span>
             </a>
             <p className="text-sm text-slate-400">
               Connect businesses for automation and growth.
@@ -146,7 +146,7 @@ export default function PublicFooter() {
         </div>
 
         <motion.div className="mt-10 pt-6 border-t border-white/10" variants={fadeUp}>
-          <p className="text-sm text-slate-400 text-center">© {currentYear} Sociovate. All rights reserved.</p>
+          <p className="text-sm text-slate-400 text-center">© {currentYear} <span className="brand-cursive text-slate-300">Sociovate</span>. All rights reserved.</p>
         </motion.div>
 
         {/* Futuristic modal for legal / careers */}

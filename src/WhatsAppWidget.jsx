@@ -18,7 +18,7 @@ export default function WhatsAppWidget({ phone = '+919860483065', message = "Hi!
         title="Chat with us on WhatsApp"
       >
         {/* Use a PNG/PNGx WhatsApp logo placed at /public/assets/whatsapp.png */}
-        <img src="public/washuppp.svg" alt="WhatsApp" className="whatsapp-icon" />
+        <img src="washuppp.svg" alt="WhatsApp" className="whatsapp-icon" />
         <span className="whatsapp-label">Chat with us!</span>
       </a>
     </div>

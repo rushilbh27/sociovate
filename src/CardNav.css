@@ -79,14 +79,14 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #FF6B2B 0%, #FF8C42 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 1.125rem;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.3);
 }
 
 .logo-text {
@@ -97,7 +97,7 @@
 }
 
 .card-nav-cta-button {
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #FF6B2B 0%, #FF8C42 100%);
   color: #fff;
   border: none;
   border-radius: 9999px;
@@ -106,7 +106,7 @@
   font-size: 0.875rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.3);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -114,7 +114,7 @@
 
 .card-nav-cta-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 107, 43, 0.4);
 }
 
 .card-nav-content {
@@ -149,7 +149,7 @@
   gap: 0.75rem;
   user-select: none;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 25px rgba(0, 122, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 107, 43, 0.1);
 }
 
 .nav-card-label {

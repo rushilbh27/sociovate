@@ -21,7 +21,7 @@ const CardNav = () => {
   const navItems = [
     {
       label: "Read",
-      bgColor: "#0b0f19",
+      bgColor: "#0a1218",
       textColor: "#fff",
       links: [
         { label: "Home", icon: HomeIcon, href: "#home" },
@@ -41,7 +41,7 @@ const CardNav = () => {
     },
     {
       label: "Get Started",
-      bgColor: "linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)",
+      bgColor: "linear-gradient(135deg, #FF6B2B 0%, #FF8C42 100%)",
       textColor: "#fff",
       links: [
         { label: "Book Discovery Call", icon: ArrowUpRightIcon, href: "#book", isHighlight: true }
