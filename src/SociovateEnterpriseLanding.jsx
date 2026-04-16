@@ -217,7 +217,7 @@ export default function SociovateEnterpriseLanding() {
       {/* NAVBAR */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl flex items-center justify-between px-6 md:px-8 py-3 bg-[#050E12]/90 backdrop-blur-xl border border-white/10 rounded-2xl z-50 shadow-2xl">
         <div className="flex items-center gap-3">
-          <img src="/logu.svg" alt="Sociovate" className="w-10 h-10 rounded-xl shadow-lg" />
+          <img src="/logoo.svg" alt="Sociovate" className="w-10 h-10 rounded-xl shadow-lg" />
           <div className="brand-cursive text-2xl text-white">Sociovate</div>
         </div>
 

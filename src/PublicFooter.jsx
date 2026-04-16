@@ -65,7 +65,7 @@ export default function PublicFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <motion.div className="space-y-4" custom={0} variants={columnVariants}>
             <a href="#" className="flex items-center gap-2">
-              <img src="/logu.svg" alt="Sociovate" className="w-7 h-7 rounded-md" />
+              <img src="/logoo.svg" alt="Sociovate" className="w-7 h-7 rounded-md" />
               <span className="brand-cursive text-xl text-white">Sociovate</span>
             </a>
             <p className="text-sm text-slate-400">

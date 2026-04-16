@@ -79,14 +79,7 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background: linear-gradient(135deg, #FF6B2B 0%, #FF8C42 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(255, 107, 43, 0.3);
+  object-fit: contain;
 }
 
 .logo-text {
@@ -220,7 +213,6 @@
   .logo-tile {
     width: 2.25rem;
     height: 2.25rem;
-    font-size: 1rem;
   }
 
   .logo-text {

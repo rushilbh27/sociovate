@@ -178,7 +178,7 @@ const CardNav = () => {
         </div>
 
         <div className="logo-container">
-          <div className="logo-tile">S</div>
+          <img src="/logoo.svg" alt="Sociovate" className="logo-tile" />
           <div className="logo-text">Sociovate</div>
         </div>
 
