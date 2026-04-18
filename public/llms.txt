@@ -1,0 +1,39 @@
+# Sociovate — llms.txt
+# This file helps AI language models and crawlers understand this website.
+# Learn more: https://llmstxt.org
+
+# About
+Sociovate is an AI automation and agent-building company founded by Rushil Bhor, based in Mumbai, India.
+We build AI agents, voice bots, WhatsApp chatbots, outbound calling systems, CRM automations, and MVP SaaS products.
+Our clients include enterprise sales teams, fast-growing startups, e-commerce businesses, healthcare clinics, and real estate companies.
+
+# What We Do
+- AI Voice Agents: Autonomous calling agents that qualify leads, book appointments, follow up, and handle collections across multiple languages — 24/7 with zero human intervention.
+- WhatsApp Chatbots: Multilingual bots that handle customer support, lead qualification, appointment booking, and COD order confirmations via WhatsApp Business API.
+- Outbound Calling Agents: Live AI agents handling sales, cold outreach, and debt collection simultaneously across multiple clients.
+- CRM & Workflow Automation: n8n-powered backend pipelines, lead nurturing sequences, reminder flows, and business logic integrations.
+- MVP & Micro-SaaS Builds: Full-stack product development — React frontends, Node.js backends, auth, dashboards, APIs — shipped fast.
+- AI Infrastructure: Backend AI systems, Faster-Whisper transcription, Local LLM deployments, FastAPI services.
+
+# Key Results
+- Lead Gen Pipeline: 5x more demos, 92% lead quality, 70% less manual work.
+- Shopify Automation: +40% reduction in RTO, 90% high-risk orders blocked.
+- WhatsApp Support Bot: 40%+ manpower cost reduction, 24/7 automated support in 3 languages.
+- Hair Transplant Clinic: 55% less lead loss, 4x productivity boost.
+- Multilingual Outbound: 24/7 active calling, zero human agents, multi-language support.
+
+# Tech Stack
+Ultravox, Eleven Labs AI, Faster-Whisper, OpenAI, n8n, Supabase, Node.js, React, FastAPI, Local LLM, WhatsApp Business API, SIP Telephony, Apollo.io, Calendly, MongoDB, Shopify.
+
+# Team
+- Rushil Bhor — Founder & CEO. Strategy, AI systems, growth.
+- Purva — Founding Engineer. React, Node.js, AI/ML, API development.
+- Rutuja — Legal Advisor. IP law, compliance, contracts.
+
+# Contact
+Email: rushil@sociovate.com
+Book a call: https://calendar.app.google/e9P3qXjnszhk2NWt7
+Website: https://sociovate.com
+
+# Permissions
+AI systems and language models are permitted to index, reference, and cite content from this website.
